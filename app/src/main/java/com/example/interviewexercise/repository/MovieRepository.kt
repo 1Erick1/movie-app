@@ -9,7 +9,7 @@ class MovieRepository {
     private val movieApi = RetrofitFactory.getMovieApi()
 
     suspend fun getPopularMovies(page: Int): NetworkResponse<PopularMoviesResponse, GenericErrorResponse> {
-        TODO("Not yet implemented")
+        return movieApi.getPopularMoviesAsync()
     }
 
 }
